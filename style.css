@@ -396,6 +396,7 @@ header {
   border-radius: .5rem;
   box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 4 );
   border: none;
+  cursor: pointer;
 }
 
 .card-info button {
@@ -624,5 +625,4 @@ footer {
   color: #fff;
   border-radius: .3rem;
   box-shadow: 0 0.1rem 0.6rem #000009;
-  background-color: rgb(255, 0, 255);
 }
