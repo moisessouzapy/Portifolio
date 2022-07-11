@@ -5,7 +5,6 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
 document.querySelector("#qtde").addEventListener("change", atualizarPreco)
 document.querySelector("#js").addEventListener("change", atualizarPreco)
 document.querySelector("#layout_sim").addEventListener("change", atualizarPreco)
-document.querySelector("#layout_nao").addEventListener("change", atualizarPreco)
 document.querySelector("#prazo").addEventListener("change", function () {
     const prazo = document.querySelector("#prazo").value
     document.querySelector("label[for=prazo]").innerHTML = `Prazo: ${prazo} semanas`
@@ -17,13 +16,12 @@ function atualizarPreco(){
     const temJS = document.querySelector("#js").checked
     const incluiLayout = document.querySelector("#layout_sim").checked
     const prazo = document.querySelector("#prazo").value
-
+  
     let preco = qtde * 100;
     if (temJS) preco *= 1.1
     if (incluiLayout) preco += 500
     let taxaUrgencia = 1 - prazo*0.1;
     preco *= 1 + taxaUrgencia
-
+   
     document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
-    
 }

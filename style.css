@@ -330,6 +330,7 @@ header {
   justify-content: space-around;
 }
 
+
 .card {
   width: 18rem;
   height: 25rem;
@@ -381,10 +382,13 @@ header {
 
 .card-info p {
   font-family: var(--font-secundary);
-  color: #eee;
-  width: 80%;
+  color: rgb(255, 255, 255);
+  width: 90%;
   font-weight: 400;
   margin-bottom: 2rem;
+}
+.card-info button a {
+  color: white;
 }
 
 .btn {
