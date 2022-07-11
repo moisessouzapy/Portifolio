@@ -630,3 +630,24 @@ footer {
   border-radius: .3rem;
   box-shadow: 0 0.1rem 0.6rem #000009;
 }
+h2{
+  margin-top: 20%;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+h2::before {
+  content: "🐅";
+  display: block;
+  text-align: center;
+}
+h3 {
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+h3 a {
+  color: #FF822D;
+}
