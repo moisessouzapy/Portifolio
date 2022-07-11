@@ -154,9 +154,9 @@
             <div class="contato-left"></div>
             <div class="contato-right">
               <h1>Contato</h1>
-              <form method="POST" action="enviar_email.php">
+              <form method="POST" action="https://formsubmit.co/moisessouza0204@gmail.com">
                <div class="input-group">
-                <input type="text" name="nome" class="field" id="nome">
+                <input type="text" name="name" class="field" id="nome">
                 <label class="field-label" for="nome">Nome</label>
                </div>
                <div class="input-group">
@@ -164,11 +164,12 @@
                 <label class="field-label" for="email">E-mail</label>
                </div>
                <div class="input-group">
-                <textarea type="text" name="mensagem" class="field" id="mensagem"></textarea>
+                <textarea type="text" name="message" class="field" id="mensagem"></textarea>
                 <label class="field-label" for="mensagem">Mensagem</label>
-               </div>
-               <button class="btn btn-submit" type="submit">Enviar</button>
-               <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+              </div>
+              <button class="btn btn-orcamento" type="submit">Enviar</button>
               </form>
             </div>
           </div>
@@ -177,7 +178,7 @@
          <section class="sessao-orcamento" id="orcamento">
           <div class="orcamento-wrapper">
             <h1>Faça um orçamento</h1>
-            <form method="POST" action="enviar_email.php">
+            <form method="POST" action="https://formsubmit.co/moisessouza0204@gmail.com">
               <label for="qtde">Quantidade de Páginas</label>
               <input type="number" min="1" name="qtde" id="qtde">
               <label for="js">Preciso de um script JS</label>
@@ -196,6 +197,8 @@
               <label for="prazo">Prazo</label>
               <input type="range" name="prazo" id="prazo" min="1" max="10">
               <label id="preco">R$ 0,00</label>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
               <button class="btn btn-orcamento" type="submit">Enviar</button>
             </form>
           </div>
