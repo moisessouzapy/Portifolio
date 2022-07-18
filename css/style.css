@@ -636,7 +636,7 @@ h2{
   font-size: 4rem;
   color: white;
 }
-h2::before {
+h5::before {
   content: "🐅";
   display: block;
   text-align: center;
