@@ -570,7 +570,7 @@ header {
   font-size: 2rem;
   outline: none;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid #3f3f3f99;
   padding: 0.3rem;
 }
 
