@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Portifólio</title>
+    <script>
+      function enviou(form) {
+      Swal.fire({
+        icon: 'success',
+        text: 'Enviado com Sucesso',
+        showCancelButton: false,
+        showConfirmButton: false,
+      })
+} 
+    </script>
 </head>
 <body>
     <!--teclado: Logitech g213 prodigy
@@ -162,20 +172,20 @@
             <div class="contato-left"></div>
             <div class="contato-right">
               <h1>Contato</h1>
-              <form method="POST" action="https://formsubmit.co/moisessouza0204@gmail.com">
+              <form onsubmit="enviou();" method="POST" action="https://formsubmit.co/moisessouza0204@gmail.com">
                <div class="input-group">
-                <input type="text" name="name" class="field" id="nome">
+                <input type="text" name="name" class="field" id="nome" required>
                 <label class="field-label" for="nome">Nome</label>
                </div>
                <div class="input-group">
-                <input type="text" name="email" class="field" id="email" required>
-                <label class="field-label" for="email">E-mail</label>
+                <input type="email" name="email" class="field" id="email" required>
+                <label class="field-label" tyo for="email">E-mail</label>
                </div>
                <div class="input-group">
                 <textarea type="text" name="message" class="field" id="mensagem"></textarea>
                 <label class="field-label" for="mensagem">Mensagem</label>
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="">
+                <input type="hidden" name="_next" value="https://moisessouzapy.github.io/Portifolio/">
               </div>
               <button class="btn btn-orcamento" type="submit">Enviar</button>
               </form>
@@ -226,5 +236,7 @@
         </a>
     </div>
 </body>
+<scripts src="custom.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script.js"></script>
 </html>
